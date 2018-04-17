@@ -7,7 +7,6 @@ import { Actions } from 'react-native-router-flux'
 import Header from './Header'
 import registerForNotifications from './services'
 import SearchBar from './Search'
-import ImageHolder from './Card'
 import MagicBar from './Magic';
 import Products from './Products'
 import Selection from './Selection'

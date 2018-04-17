@@ -61,7 +61,7 @@ class Sidebar extends PureComponent {
                     <Icon name='home' style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>More Categories</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
+                <TouchableOpacity onPress={() => Actions.tailorshome()} style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
                     <Icon name='home' style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Tailors</Text>
                 </TouchableOpacity>
