@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "688705840752",
+    "firebase_url": "https://rosefabrics-3ab5b.firebaseio.com",
+    "project_id": "rosefabrics-3ab5b",
+    "storage_bucket": "rosefabrics-3ab5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688705840752:android:3cda144cd23203a3",
+        "android_client_info": {
+          "package_name": "com.rosefabrics.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688705840752-md0eri9f6nc01tav2ckhe545iiailh45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgZmI0E05VExiqpiyoiCZ_qA0wmqJoq0s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

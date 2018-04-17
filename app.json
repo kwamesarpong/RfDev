@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Rose Fabrics",
+    "version": "1.0.0",
+    "slug": "r-fabrics",
+    "icon": "./icon.png",
+    "sdkVersion": "26.0.0",
+    "ios": {
+      "bundleIdentifier": "com.rosefabrics.app"
+    },
+    "android": {
+      "package": "com.rosefabrics.app",
+      "googleServicesFile": "./google-services.json"
+    }
+  }
+}
