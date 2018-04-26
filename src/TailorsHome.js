@@ -14,9 +14,6 @@ class TailorsHome extends PureComponent {
   }
 
 
-handleSelect = (data) => {
-  Actions.tailor({data})
-}
 
 
  render(){
@@ -24,7 +21,7 @@ handleSelect = (data) => {
       <View style={{flex:1, backgroundColor:'white'}}>
         <ScrollView>
             <Text style={{paddingTop: 10, paddingBottom: 10, color: 'brown', fontSize: 20, alignSelf: 'center'}}>Tailors</Text>
-            <Tailors handleSelect={this.handleSelect}/>
+            <Tailors />
         </ScrollView>
      </View>
     )

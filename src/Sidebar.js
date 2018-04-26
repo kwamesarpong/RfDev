@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { View, ScrollView, Text, TouchableOpacity, AsyncStorage } from 'react-native'
+import { View, ScrollView, Text, Image, TouchableOpacity, AsyncStorage } from 'react-native'
 import { Icon } from 'native-base'
 import axios from 'axios'
 import { Actions } from 'react-native-router-flux'
@@ -49,32 +49,28 @@ class Sidebar extends PureComponent {
             <ScrollView>
                 <View style={{ backgroundColor: 'white', paddingBottom: 30 }}>
                 <TouchableOpacity onPress={() => Actions.home()} style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' color='red' style={{paddingLeft:10}} />
+                    <Image source={require('../home.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Home</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => Actions.carts()}  style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
+                    <Image source={require('../carts.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Carts</Text>
                 </TouchableOpacity>
                 {this.renderCats()}
                 <TouchableOpacity onPress={() => Actions.morecatshome()} style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
+                    <Image source={require('../category.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>More Categories</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => Actions.tailorshome()} style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
+                    <Image source={require('../tailor.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Tailors</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
+                    <Image source={require('../settings.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Settings</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
-                    <Text style={{paddingLeft:20}}>Contact Us</Text>
-                </TouchableOpacity>
                 <TouchableOpacity onPress={this.logout} style={{flexDirection:'row', alignItems:'center', paddingTop:20}}>
-                    <Icon name='home' style={{paddingLeft:10}} />
+                    <Image source={require('../logout.png')} style={{paddingLeft:10}} />
                     <Text style={{paddingLeft:20}}>Logout</Text>
                 </TouchableOpacity>
                 </View>

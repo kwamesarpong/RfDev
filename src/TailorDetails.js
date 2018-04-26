@@ -10,6 +10,7 @@ class TailorDetails extends PureComponent {
     state = {
         quantity: 2,
         ig_account: '',
+        location: '',
         name: '',
         img: ' ',
         id: ''
@@ -18,6 +19,7 @@ class TailorDetails extends PureComponent {
     componentDidMount() {
         this.setState({
             ig_account: this.props.data.ig_account,
+            location: this.props.data.location,
             name: this.props.data.name,
             img: this.props.data.img_one,
             id: this.props.data.id
@@ -26,17 +28,26 @@ class TailorDetails extends PureComponent {
 
 
     render(){
-        const { quantity, ig_account, name, img } = this.state
+        const { quantity, ig_account, location, name, img } = this.state
         return (
             <View style={{backgroundColor: 'white', height: '100%'}}>
                 <Card containerStyle={styles.container} imageStyle={styles.image}
                     image={{uri: img}}>
-                    <Text style={{marginBottom: 10, textAlign:'center'}}>
+                    <Text style={{marginBottom: 10, textAlign:'center', fontSize: 20, fontWeight: 'bold', color: '#ff0000'}}>
                         {name}
                     </Text>
+                    <Text style={{marginBottom: 10, textAlign:'center'}}>{location}</Text>
                     <Text style={{marginBottom: 10, textAlign:'center'}}>
                         {ig_account}
                     </Text>
+                    <View style={{ alignItems: 'center', marginBottom: 15 }}>
+                        <View style={{ flexDirection: 'row', paddingTop: 10, alignItems: 'center' }}>
+                            <Icon name='md-star' style={{color: 'red', fontSize: 20}} />
+                            <Icon name='md-star' style={{color: 'red', fontSize: 20}} />
+                            <Icon name='md-star' style={{color: 'red', fontSize: 20}} />
+                            <Icon name='md-star' style={{color: 'red', fontSize: 20}} />
+                        </View>
+                    </View>
                     <Button
                         backgroundColor='red'
                         buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}

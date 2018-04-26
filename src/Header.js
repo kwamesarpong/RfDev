@@ -15,13 +15,13 @@ class NavBar extends PureComponent {
                 leftComponent={
                         <Icon 
                         name='menu'
-                        color='red'
+                        color='brown'
                         size={20}
                         onPress={() => Actions.drawerOpen()} />}
                         centerComponent={<Image source={require('../log.jpeg')} style={styles.image} />}
                         rightComponent={<Icon onPress={() => Actions.carts()}
                         name="shopping-cart" 
-                        color="red" 
+                        color="brown" 
                         size={20} 
                 />}
             />

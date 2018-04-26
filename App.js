@@ -9,7 +9,6 @@ import Sidebar from './src/Sidebar'
 import Home from './src/Home'
 import Cart from './src/Carts'
 import ProductDetails from './src/ProductDetails'
-import TailorDetails from './src/TailorDetails'
 import Checkout from './src/Checkout'
 import requireAuth from './src/HOC'
 import MysteryBox from './src/Mysterybox'
@@ -37,7 +36,6 @@ class App extends Component {
                     <Scene key='carts' component={requireAuth(Cart)} title='cart' hideNavBar />
                 </Drawer>
                 <Scene key={'product'} path={"/product/:id/"} component={requireAuth(ProductDetails)} navBar={BackHeader} />
-                <Scene key={'tailor'} path={"/tailor/:id/"} component={requireAuth(TailorDetails)} navBar={BackHeader} />
                 <Scene key='checkout' component={Checkout} navBar={BackHeader} />
                 <Scene key='mysterybox' component={MysteryBox} title='mysterybox' navBar={BackHeader} />
                 <Scene key='dealshome' component={DealsHome} title='dealshome' navBar={BackHeader} />

@@ -6,7 +6,7 @@ const MysteryBoxForm = ({type, fields, onChange, onSubmit}) => (
             behavior="padding"
             style={styles.container}
          >
-        <Text style={{fontSize: 20, color: 'red'}}>Mystery Box</Text>
+        <Text style={{fontSize: 20, color: 'brown'}}>Mystery Box</Text>
         <Text style={{paddingTop: 10}}>How often should we surprise you?</Text>
         <TextInput 
             placeholder='Weekly, Twice a month, Monthly'

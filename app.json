@@ -11,6 +11,11 @@
     "android": {
       "package": "com.rosefabrics.app",
       "googleServicesFile": "./google-services.json"
+    },
+    "splash": {
+      "image": "./splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
     }
   }
 }

@@ -120,7 +120,7 @@ class Carts extends PureComponent {
                 <View style={{backgroundColor: 'white', paddingBottom: 300}}>
                     <Text 
                         style={{textAlign:'center',
-                        color:'red',fontWeight:'bold'}}
+                        color:'brown',fontWeight:'bold'}}
                     >
                         {carts && carts.length > 0 ? 'Your Cart' : 'Nothing in Cart'}
                     </Text>

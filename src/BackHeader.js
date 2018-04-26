@@ -15,13 +15,13 @@ class BackHeader extends PureComponent {
                 leftComponent={
                         <Icon 
                         name='arrow-back'
-                        color='red'
+                        color='brown'
                         size={20}
                         onPress={() => Actions.pop()} />}
                         centerComponent={<Image source={require('../log.jpeg')} style={styles.image} />}
                         rightComponent={<Icon onPress={() => Actions.carts()}
                         name="shopping-cart" 
-                        color="red" 
+                        color="brown" 
                         size={20} 
                 />}
             />

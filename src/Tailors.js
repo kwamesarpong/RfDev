@@ -21,7 +21,6 @@ class Tailors extends Component {
         <TailorsList
           key={i}
           {...data}
-          onPressItem={() => this.props.handleSelect(data)}
         />
       )
      
